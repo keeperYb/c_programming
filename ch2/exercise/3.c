@@ -24,7 +24,7 @@ int htoi(char s[])
 		else if(s[i] >= 'a' && s[i] <= 'f'){
 			hexdigit = s[i] - 'a' + 10;
 		}
-		else if(s[i] >= 'A' && s[i] <= 'Z'){
+		else if(s[i] >= 'A' && s[i] <= 'F'){
 			hexdigit = s[i] - 'A' + 10;
 		}
 		else{
