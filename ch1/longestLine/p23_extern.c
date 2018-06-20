@@ -8,8 +8,8 @@ int max;
 char line[MAXLINE];
 char longest[MAXLINE];
 
-int getline(void);
-void copy(coid);
+int getline_my(void);
+void copy(void);
 
 
 int main()
@@ -48,13 +48,17 @@ int getline_my(void)
 		line[i] = c;
 		++i;
 	}
-	l
-
-
-
-
-	
+	line[i] ='\0';
 	return i;
 }
 
-void
+void copy(void)
+{
+	int i;
+	extern char line[], longest[];
+
+	i = 0;
+	while((longest[i] = line[i]) != '\0'){
+		++i;
+	}
+}
